@@ -1,8 +1,7 @@
 # 📚 ITI – First Session: HTML Basics
 
 ![HTML5 Badge](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![Beginner Friendly](https://img.shields.io/badge/Beginner-Friendly-green?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Completed-blue?style=for-the-badge)
+
 
 ---
 
