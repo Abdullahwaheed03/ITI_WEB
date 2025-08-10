@@ -1,61 +1,86 @@
-# 📚 Summary for First Session in ITI
+# 📚 HTML Basics – ITI Session 1 Summary
 
-This document summarizes the basic HTML structure, tags, and attributes introduced in the first ITI web development session.
-
----
-
-## 🏗 Basic Structure Tags
-
-| **Tag** | **Description** | **Example** |
-|---------|----------------|-------------|
-| `<!DOCTYPE html>` | Declares that the document is HTML5. No closing tag. | `<!DOCTYPE html>` |
-| `<html></html>` | Root tag containing all HTML content. | `<html> ... </html>` |
-| `<head></head>` | Contains metadata, title, styles, and links. | `<head> ... </head>` |
-| `<title></title>` | Sets the page title (appears in the browser tab). | `<title>My Page</title>` |
-| `<body></body>` | Contains the visible content of the page (text, images, etc.). | `<body> ... </body>` |
+This document summarizes the **first ITI HTML session** covering the essential HTML tags, attributes, and their usage.  
+It’s formatted for **GitHub README.md** so it’s clean, easy to read, and reference-friendly.
 
 ---
 
-## 📝 Text and Formatting Tags
+## 1️⃣ Basic HTML Structure
 
-| **Tag** | **Purpose** | **Example** |
-|---------|------------|-------------|
-| `<h1>` → `<h6>` | Headings, `<h1>` is the highest priority (only one `<h1>` per page). | `<h1>Main Title</h1>` |
-| `<p></p>` | Paragraph text. | `<p>Hello World</p>` |
-| `<br>` | Line break (no closing tag). | `Line 1<br>Line 2` |
-| `<a></a>` | Creates a clickable hyperlink. | `<a href="https://example.com">Click Me</a>` |
-| `<img>` | Displays an image. No closing tag. | `<img src="image.jpg" alt="Description">` |
-| `<hr>` | Horizontal rule/line. | `<hr>` |
-| `<pre></pre>` | Preformatted text (keeps spaces & line breaks). | `<pre> Text    with    spaces </pre>` |
-| `<b></b>` | Bold text. | `<b>Bold</b>` |
-| `<strong></strong>` | Important text (SEO-friendly bold). | `<strong>Important</strong>` |
-| `<i></i>` | Italic text. | `<i>Italic</i>` |
-| `<em></em>` | Emphasized text. | `<em>Emphasis</em>` |
-| `<ins></ins>` | Underlined text. | `<ins>Inserted</ins>` |
-| `<del></del>` | Strikethrough text. | `<del>Deleted</del>` |
-| `<sub></sub>` | Subscript text. | `H<sub>2</sub>O` |
-| `<sup></sup>` | Superscript text. | `X<sup>2</sup>` |
-| `<mark></mark>` | Highlighted text. | `<mark>Highlighted</mark>` |
+| Tag | Description | Notes |
+|-----|-------------|-------|
+| `<!DOCTYPE html>` | 📄 Declares that the document is HTML5. | No closing tag required. |
+| `<html></html>` | 🌐 Root element of the HTML page. | Contains all page content. |
+| `<head></head>` | 🧠 Contains metadata & page settings. | Not visible to the user. |
+| `<title></title>` | 🏷 Page title (shown in browser tab). | Placed inside `<head>`. |
+| `<body></body>` | 🖋 Contains all visible page content. | Text, images, audio, etc. |
 
 ---
 
-## ⚙ Attributes
+## 2️⃣ Common Content Tags
 
-| **Attribute** | **Purpose** | **Example** |
-|---------------|------------|-------------|
-| `href` | Defines link destination (used with `<a>`). | `<a href="https://example.com">Link</a>` |
-| `src` | File source (used with `<img>`, `<script>`, etc.). | `<img src="image.jpg">` |
-| `width` | Width of an element (often in `<img>`). | `<img src="image.jpg" width="300">` |
-| `height` | Height of an element (often in `<img>`). | `<img src="image.jpg" height="200">` |
-| `alt` | Alternative text for images (SEO & accessibility). | `<img src="image.jpg" alt="A Cat">` |
-| `style` | Inline CSS styling. | `<p style="color:red;">Red Text</p>` |
+| Tag | Purpose | Example |
+|-----|---------|---------|
+| `<h1>…</h1>` | 🏆 Main heading (h1-h6 levels). | `<h1>Main Title</h1>` |
+| `<p>…</p>` | 📄 Paragraph of text. | `<p>This is text</p>` |
+| `<br>` | ↩ Line break. | `<p>Line 1<br>Line 2</p>` |
+| `<a href="">…</a>` | 🔗 Hyperlink. | `<a href="https://example.com">Visit</a>` |
+| `<img src="">` | 🖼 Image. | `<img src="image.jpg" alt="Description">` |
+| `<hr>` | ➖ Horizontal line. | `<hr>` |
+| `<pre>…</pre>` | 📜 Preformatted text. | Preserves spaces & line breaks. |
+
+---
+
+## 3️⃣ Text Formatting Tags
+
+| Tag | Purpose | Example |
+|-----|---------|---------|
+| `<b>…</b>` | 🔠 Bold text. | `<b>Bold</b>` |
+| `<strong>…</strong>` | 📢 Important text (bold). | `<strong>Alert!</strong>` |
+| `<i>…</i>` | ✏ Italic text. | `<i>Italic</i>` |
+| `<em>…</em>` | 🎯 Emphasized text. | `<em>Focus</em>` |
+| `<ins>…</ins>` | ✍ Underlined text. | `<ins>Underline</ins>` |
+| `<del>…</del>` | ❌ Strikethrough. | `<del>Old</del>` |
+| `<sub>…</sub>` | 🔽 Subscript. | `H<sub>2</sub>O` |
+| `<sup>…</sup>` | 🔼 Superscript. | `x<sup>2</sup>` |
+| `<mark>…</mark>` | 🖍 Highlight text. | `<mark>Important</mark>` |
 
 ---
 
-## 📌 Notes
-- Always start with `<!DOCTYPE html>` for HTML5.
-- Only one `<h1>` tag should be used per page for SEO.
-- Attributes like `width` and `height` can use **px**, **%**, or other CSS units.
-- The `style` attribute is for quick styling, but CSS files are preferred for larger projects.
+## 4️⃣ HTML Attributes
+
+| Attribute | Purpose | Example |
+|-----------|---------|---------|
+| `href` | 🔗 URL for links. | `<a href="link.html">Click</a>` |
+| `src` | 📂 File path for media. | `<img src="image.jpg">` |
+| `width` | 📏 Set width. | `<img width="300">` |
+| `height` | 📏 Set height. | `<img height="200">` |
+| `alt` | 🦯 Alternative text for accessibility. | `<img alt="Description">` |
+| `style` | 🎨 Inline styling (CSS). | `<p style="color:red;">Text</p>` |
 
 ---
+
+## 🛠 Notes
+- **Basic Structure** = `<!DOCTYPE html>`, `<html>`, `<head>`, `<title>`, `<body>`.
+- **Headings**: Use only **one `<h1>`** per page for SEO.
+- **Accessibility**: Always add `alt` for images.
+- **Separation of concerns**: Use CSS for styling instead of inline `style` when possible.
+
+---
+
+## 📌 Example HTML5 Page
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Page</title>
+</head>
+<body>
+    <h1>Welcome to HTML</h1>
+    <p>This is my first paragraph.</p>
+    <a href="https://example.com">Visit Example</a>
+    <br>
+    <img src="image.jpg" alt="Sample Image" width="300">
+</body>
+</html>
