@@ -1,67 +1,61 @@
-# 📚 ITI Web Course Content Summary  
+# 📚 Summary for First Session in ITI
 
-Welcome to the **ITI Web Course Summary Repository**.  
-This README provides a **clear, well-structured, and visually enhanced** overview of the course contents,  
-featuring **HTML, CSS, and JavaScript fundamentals** with styling for better readability.  
+This document summarizes the basic HTML structure, tags, and attributes introduced in the first ITI web development session.
 
 ---
 
-## 🎯 Course Overview  
+## 🏗 Basic Structure Tags
 
-The **ITI Web Development Track** is designed to introduce students to core web technologies,  
-starting from basic **HTML structure**, styling with **CSS**, and adding interactivity with **JavaScript**.  
-
-> ✅ **Goal:** Equip learners with the skills to build and style responsive, interactive web pages.  
-> ❌ **Not Covered:** Advanced frameworks like React, Angular, or backend development.  
-
----
-
-## 🏗 HTML Basics  
-
-| Tag | Description | Example |
-|-----|-------------|---------|
-| `<h1>` – `<h6>` | Heading levels | `<h1>Main Title</h1>` |
-| `<p>` | Paragraph | `<p>This is a paragraph.</p>` |
-| `<a>` | Hyperlink | `<a href="https://example.com">Click Here</a>` |
-| `<img>` | Image | `<img src="image.jpg" alt="Description">` |
-| `<ul>`, `<ol>`, `<li>` | Lists | `<ul><li>Item</li></ul>` |
-
-> 💡 **Tip:** Use semantic tags like `<header>`, `<main>`, and `<footer>` for better accessibility.
+| **Tag** | **Description** | **Example** |
+|---------|----------------|-------------|
+| `<!DOCTYPE html>` | Declares that the document is HTML5. No closing tag. | `<!DOCTYPE html>` |
+| `<html></html>` | Root tag containing all HTML content. | `<html> ... </html>` |
+| `<head></head>` | Contains metadata, title, styles, and links. | `<head> ... </head>` |
+| `<title></title>` | Sets the page title (appears in the browser tab). | `<title>My Page</title>` |
+| `<body></body>` | Contains the visible content of the page (text, images, etc.). | `<body> ... </body>` |
 
 ---
 
-## 🎨 CSS Styling  
+## 📝 Text and Formatting Tags
 
-| Property | Purpose | Example |
-|----------|---------|---------|
-| `color` | Text color | `color: red;` |
-| `background-color` | Background color | `background-color: #f4f4f4;` |
-| `font-size` | Text size | `font-size: 18px;` |
-| `margin` / `padding` | Spacing | `margin: 10px;` |
-| `border` | Element border | `border: 1px solid black;` |
-
-> 🎯 **Best Practice:** Keep CSS in a separate `.css` file for cleaner HTML.
-
----
-
-## ⚡ JavaScript Essentials  
-
-| Concept | Purpose | Example |
-|---------|---------|---------|
-| Variables | Store data | `let name = "John";` |
-| Functions | Reusable logic | `function greet() { alert("Hello!"); }` |
-| Events | Interactivity | `<button onclick="greet()">Click</button>` |
-| DOM Manipulation | Update page content | `document.getElementById("demo").innerText = "Updated";` |
-
-> ✅ **Use cases:** Form validation, interactive UI, animations.  
+| **Tag** | **Purpose** | **Example** |
+|---------|------------|-------------|
+| `<h1>` → `<h6>` | Headings, `<h1>` is the highest priority (only one `<h1>` per page). | `<h1>Main Title</h1>` |
+| `<p></p>` | Paragraph text. | `<p>Hello World</p>` |
+| `<br>` | Line break (no closing tag). | `Line 1<br>Line 2` |
+| `<a></a>` | Creates a clickable hyperlink. | `<a href="https://example.com">Click Me</a>` |
+| `<img>` | Displays an image. No closing tag. | `<img src="image.jpg" alt="Description">` |
+| `<hr>` | Horizontal rule/line. | `<hr>` |
+| `<pre></pre>` | Preformatted text (keeps spaces & line breaks). | `<pre> Text    with    spaces </pre>` |
+| `<b></b>` | Bold text. | `<b>Bold</b>` |
+| `<strong></strong>` | Important text (SEO-friendly bold). | `<strong>Important</strong>` |
+| `<i></i>` | Italic text. | `<i>Italic</i>` |
+| `<em></em>` | Emphasized text. | `<em>Emphasis</em>` |
+| `<ins></ins>` | Underlined text. | `<ins>Inserted</ins>` |
+| `<del></del>` | Strikethrough text. | `<del>Deleted</del>` |
+| `<sub></sub>` | Subscript text. | `H<sub>2</sub>O` |
+| `<sup></sup>` | Superscript text. | `X<sup>2</sup>` |
+| `<mark></mark>` | Highlighted text. | `<mark>Highlighted</mark>` |
 
 ---
 
-## 📂 Repository Structure  
+## ⚙ Attributes
 
-```plaintext
-📦 iti-web-summary
- ┣ 📜 README.md
- ┣ 📂 html-examples
- ┣ 📂 css-examples
- ┣ 📂 js-examples
+| **Attribute** | **Purpose** | **Example** |
+|---------------|------------|-------------|
+| `href` | Defines link destination (used with `<a>`). | `<a href="https://example.com">Link</a>` |
+| `src` | File source (used with `<img>`, `<script>`, etc.). | `<img src="image.jpg">` |
+| `width` | Width of an element (often in `<img>`). | `<img src="image.jpg" width="300">` |
+| `height` | Height of an element (often in `<img>`). | `<img src="image.jpg" height="200">` |
+| `alt` | Alternative text for images (SEO & accessibility). | `<img src="image.jpg" alt="A Cat">` |
+| `style` | Inline CSS styling. | `<p style="color:red;">Red Text</p>` |
+
+---
+
+## 📌 Notes
+- Always start with `<!DOCTYPE html>` for HTML5.
+- Only one `<h1>` tag should be used per page for SEO.
+- Attributes like `width` and `height` can use **px**, **%**, or other CSS units.
+- The `style` attribute is for quick styling, but CSS files are preferred for larger projects.
+
+---
