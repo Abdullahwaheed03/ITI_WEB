@@ -1,86 +1,62 @@
-# 📚 ITI – First Session: HTML Basics
+# 📚 ITI – First Session Summary: HTML Basics
 
-![HTML5 Badge](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-
-
----
-
-## 📑 Table of Contents
-1. [Introduction](#-introduction)
-2. [Basic HTML Structure](#-basic-html-structure)
-3. [Common HTML Tags](#-common-html-tags)
-4. [HTML Attributes](#-html-attributes)
-5. [Example HTML Page](#-example-html-page)
-6. [Best Practices](#-best-practices)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 
 ---
 
-## 📌 Introduction
-This session covers the **fundamentals of HTML**, the standard language used to create web pages.  
-You will learn:
-- The **basic structure** of an HTML document.
-- The most common **HTML tags**.
-- Important **attributes** and their purposes.
+## ✅ 1. HTML Tags
 
----
-
-## 🏗 Basic HTML Structure
-Every HTML page starts with the following **core elements**:
-
+### 🏗 Basic Structure Tags
 | Tag | Description |
 |-----|-------------|
-| `<!DOCTYPE html>` | Declares HTML5 document type. *(No closing tag)* |
-| `<html> ... </html>` | Root element – contains all content. |
-| `<head> ... </head>` | Metadata, title, and linked resources. |
-| `<title> ... </title>` | Sets the browser tab title. |
-| `<body> ... </body>` | Contains all visible content. |
+| `<!DOCTYPE html>` | ✅ First tag in the document. Declares HTML5 and has no closing tag. |
+| `<html> ... </html>` | ✅ Root element containing all content. |
+| `<head> ... </head>` | ✅ Contains page metadata, title, styles, and scripts. |
+| `<title> ... </title>` | ✅ Page title shown in the browser tab (**inside `<head>`**). |
+| `<body> ... </body>` | ✅ Contains all visible page content (text, images, videos, etc.). |
 
 ---
 
-## 🏷 Common HTML Tags
-
-### 📄 Headings
+### 📄 Headings & Text
 | Tag | Description |
 |-----|-------------|
-| `<h1>` | Main heading (only one per page). |
-| `<h2>` – `<h6>` | Subheadings for different levels of importance. |
+| `<h1> ... </h1>` | ✅ Main heading of the page (**only one `<h1>` allowed per page** ❌ duplicate). Subheadings: `<h2>` → `<h6>`. |
+| `<p> ... </p>` | ✅ Paragraph of text (inside `<body>`). |
+| `<br>` | ✅ Line break (no closing tag). |
+| `<hr>` | ✅ Horizontal rule separator (no closing tag). |
+| `<pre> ... </pre>` | ✅ Preformatted text (preserves spaces and line breaks). |
+| `<b> ... </b>` | ✅ Bold text (visual only). |
+| `<strong> ... </strong>` | ✅ Important text (semantic + bold). |
+| `<i> ... </i>` | ✅ Italic text (visual only). |
+| `<em> ... </em>` | ✅ Emphasized text (semantic + italic). |
+| `<ins> ... </ins>` | ✅ Underlined inserted text. |
+| `<del> ... </del>` | ✅ Strikethrough deleted text. |
+| `<sub> ... </sub>` | ✅ Subscript text (e.g., `H₂O`). |
+| `<sup> ... </sup>` | ✅ Superscript text (e.g., `x²`). |
 
-### ✏ Text & Formatting
-| Tag | Description |
-|-----|-------------|
-| `<p>` | Paragraph. |
-| `<br>` | Line break *(no closing tag)*. |
-| `<hr>` | Horizontal rule *(no closing tag)*. |
-| `<pre>` | Preformatted text (preserves spaces/line breaks). |
-| `<b>` | Bold text (visual only). |
-| `<strong>` | Important text (semantic + bold). |
-| `<i>` | Italics (visual only). |
-| `<em>` | Emphasized text (semantic + italics). |
-| `<ins>` | Underlined inserted text. |
-| `<del>` | Strikethrough deleted text. |
-| `<sub>` | Subscript (H<sub>2</sub>O). |
-| `<sup>` | Superscript (X<sup>2</sup>). |
+---
 
 ### 🔗 Links & Media
 | Tag | Description |
 |-----|-------------|
-| `<a href="URL"> ... </a>` | Anchor – clickable hyperlink. |
-| `<img src="path" alt="description">` | Image element. |
+| `<a href="..."> ... </a>` | ✅ Anchor tag – clickable link. |
+| `<img src="..." alt="...">` | ✅ Displays an image. |
 
 ---
 
-## ⚙ HTML Attributes
+## ⚙ 2. HTML Attributes
+
 | Attribute | Used With | Description |
 |-----------|-----------|-------------|
-| `href` | `<a>` | Link destination URL. |
-| `src` | `<img>`, `<script>`, `<audio>`, `<video>` | File source path. |
-| `width` | `<img>`, `<video>` | Width in pixels or %. |
-| `height` | `<img>`, `<video>` | Height in pixels or %. |
-| `alt` | `<img>` | Alternative text for accessibility & SEO. |
+| `href` | `<a>` | ✅ Link destination URL. |
+| `src` | `<img>`, `<script>`, `<audio>`, `<video>` | ✅ File source path. |
+| `width` | `<img>`, `<video>` | ✅ Width in pixels or %. |
+| `height` | `<img>`, `<video>` | ✅ Height in pixels or %. |
+| `alt` | `<img>` | ✅ Alternative text (for accessibility & SEO). |
 
 ---
 
-## 💻 Example HTML Page
+## 💻 Example Basic HTML Page
 
 ```html
 <!DOCTYPE html>
