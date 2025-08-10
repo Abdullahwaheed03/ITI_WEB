@@ -1,8 +1,7 @@
 # 📚 ITI – First Session: HTML Basics
 
 ![HTML5 Badge](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![Beginner Friendly](https://img.shields.io/badge/Beginner-Friendly-green?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Completed-blue?style=for-the-badge)
+
 
 ---
 
@@ -102,3 +101,4 @@ Every HTML page starts with the following **core elements**:
     <p>H<sub>2</sub>O is water, and E = mc<sup>2</sup> is Einstein's equation.</p>
 </body>
 </html>
+
